@@ -44,7 +44,7 @@ export type ChangeCurrentCurrencyType = {
 };
 
 
-export const СhangeCurrentCurrencyAC = (currentCurrency: string): ChangeCurrentCurrencyType => {
+export const ChangeCurrentCurrencyAC = (currentCurrency: string): ChangeCurrentCurrencyType => {
     return {
         type: ACTIONS_TYPE.CHANGE_CURRENT_CURRENCY,
         payload: {currentCurrency},
