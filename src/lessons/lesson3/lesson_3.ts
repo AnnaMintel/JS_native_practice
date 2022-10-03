@@ -15,6 +15,7 @@ console.log('lesson 3');
 // https://jsonplaceholder.typicode.com/posts/1
 // https://habr.com/ru/company/oleg-bunin/blog/417461/?_ga=2.54695343.543933152.1602500664-1040035071.1596811661
 
+
 let prom = new Promise((resolve, reject) => {
     // some code
     let a = 10;
@@ -23,6 +24,7 @@ let prom = new Promise((resolve, reject) => {
     setTimeout(resolve, 1000, 5);
     // reject(0)
 });
+
 
 // then error then error
 prom.then(res => {
@@ -38,6 +40,7 @@ prom.then(res => {
     return 40;
 })
 
+
 // then then then catch
 prom.then(res3 => {
     console.log('res3 ', res3);
@@ -52,6 +55,7 @@ prom.then(res3 => {
 .catch(error => {
     console.log("error ", error);
 })
+
 
 // then catch then catch
 prom.then(res5 => {
@@ -89,8 +93,6 @@ prom.then(res5 => {
     //@ts-ignore
     return res8 + 15;
 })
-
-
 
 // just a plug
 export default () => { };
